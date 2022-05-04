@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: dimgrey;
+        }
+        .box1{
+
+            background-color: aliceblue;
+           border: 3px solid black;
+           border-radius: 10px;
+              width: 265px;
+              height: 310px;
+      }
+
+      .box2 {
+          margin-top: 30px;
+          background-color: aliceblue;
+           border: 3px solid black;
+           border-radius: 10px;
+              width: 265px;
+              height: 310px;
+      }
+
+      .box1img {
+          margin-top: 12px;
+          border-radius: 50px;
+      }
+
+      .box2img {
+          margin-top: 12px;
+          border-radius: 50px;
+      }
+        
+      .box1btn {
+
+        margin-top: 15px;
+        border: 0;
+        border-radius: 18px;
+        outline: 0;
+        height: 50px;
+        background-color: chartreuse;
+      }
+
+      .box2btn {
+
+margin-top: 15px;
+border: 0;
+border-radius: 18px;
+outline: 0;
+height: 50px;
+background-color: chartreuse;
+}
+
+    </style>
+</head>
+<body>
+
+
+
+<div>
+    <center>
+
+<!---st--->
+    <div class="box1">
+
+        
+        <img class="box1img" src="../src_1/indeximg/100.png"><br>
+
+        <center>
+        <strong><p style="font-size: 1.1em; font-style:inherit;">NyaVideo</p> <br> 냐너가 유튜브에 올린 영상을 이 페이지에서 광고 없이 볼 수 있어요!</strong>
+
+        <button class="box1btn" onClick="location.href='../src_1/nyatube.html'"><p style="font-size: 1.1em; font-style: normal;">영상 보러가기</p><br><p>  </p></button>
+    </div>
+<!---en--->
+
+<!--st-->
+<div class="box2">
+
+        
+    <img class="box2img" src="../src_1/indeximg/100.png"><br>
+
+    <center>
+    <strong><p style="font-size: 1.1em; font-style:inherit;">유저 정보</p> <br> 마인크래프트 유저 정보를 확인하실 수 있습니다.</strong><br>
+
+    <button class="box2btn" onClick="location.href='../src_1/mcusers.html'"><p style="font-size: 1.1em; font-style: normal;">유저 정보 보러가기</p><br><p>  </p></button>
+</center>
+</div>
+<!--en-->
+
+
+</center>
+
+
+    
+
+</div>
+
+
+    <script>
+        var osInformation = navigator.userAgent.toLowerCase();
+
+
+        if(osInformation.indexOf('iphone') >= 0) {
+
+            location.href = "http://m.nyaneo.me/main/";
+        
+        }
+        if(osInformation.indexOf('android') >= 0) {
+
+            location.href = "http://m.nyaneo.me/main/";
+
+        }
+
+
+    </script>
+</body>
+</html>
